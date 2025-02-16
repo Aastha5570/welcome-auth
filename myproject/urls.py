@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from users import views
+from users import views  # Import your views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login_view, name='login'),  # Root URL should be mapped to the login view
+    path('', views.login_view, name='login'),  # This should be set to your login view
 ]
+
