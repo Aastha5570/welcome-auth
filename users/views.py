@@ -22,3 +22,9 @@ def login_view(request):
 
 def welcome_view(request):
     return render(request, 'users/welcome.html')  # Render the welcome page
+    
+from django.shortcuts import render
+
+def login_view(request):
+    return render(request, 'users/login.html')
+
